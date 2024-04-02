@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Realm | Profiles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <div class="z-50 w-full fixed p-4">
+        <div class="rounded-xl navbar backdrop-blur-md shadow-xl bg-[#ffffff61]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="font-bold">Item 1</a></li>
+                        <li>
+                            <a class="font-bold">Parent</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="font-bold">Item 3</a></li>
+                        <li><a class="btn mx-2 my-1 btn-error text-white">Login</a></li>
+                        <li><a class="btn mx-2 my-1 btn-outline btn-error">Signup</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Recipe Realm</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Item 1</a></li>
+                    <li>
+                        <details>
+                            <summary class="font-bold">Parent</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a class="font-bold">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="hidden lg:grid btn btn-error text-white">Login</a>
+                <a class="hidden lg:grid btn hover:text-white mx-2 btn-outline btn-error">Signup</a>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-neutral text-white">Search</div>
+                    <ul tabindex="0"
+                        class="dropdown-content z-[1] mt-4 menu p-2 shadow bg-base-100 rounded-box w-[90vw] md:w-[30vw]">
+                        <div class="relative flex w-full">
+                            <div class="relative h-10 w-full">
+                                <input type="text"
+                                    class="peer h-full w-full rounded-[7px] border border-red-500 bg-transparent px-3 py-2.5 pr-20 font-sans text-sm font-normal text-red-500 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-red-500 focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0"
+                                    placeholder=" " value="" />
+                                <label
+                                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-red-500 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-red-500 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                                    Search here...
+                                </label>
+                            </div>
+                            <button
+                                class="!absolute right-1 top-1 select-none rounded bg-red-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-gray-500/20 transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                                type="button">
+                                Search
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- Jumbotron -->
+    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('images/bg.jpg')] h-[30vh] lg:h-[20vh]">
+    </div>
+  <div class="px-6 py-12 text-center mt-[-8rem] lg:mt-0 md:px-12 lg:text-left">
+    <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
+      <div class="grid items-center lg:grid-cols-2">
+        <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0 z-10">
+          <div
+            class="grid justify-center rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[20px]">
+            <h1 class="mt-2 mb-16 text-3xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                <span class="text-red-500">Natalie</span> Paisley <br />
+                <span class="md:text-3xl">
+                    <span><i class="fa-solid fa-user"></i> 3.2k</span>
+                    <span class="mx-4"><i class="fa-solid fa-clapperboard"></i> 47</span>
+                    <span class="text-red-500"><i class="fa-solid fa-heart"></i> 3.5k</span>
+                </span>
+            </h1>
+            <div>
+                <a class="mb-2 inline-block rounded bg-red-500 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
+                data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Follow <i class="fa-solid fa-user-plus"></i></a>
+                <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-red-500 transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
+                data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Details <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="md:mb-12 lg:mb-0">
+            <img src="https://docs.material-tailwind.com/img/team-3.jpg"
+              class="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron End -->
+  <!-- recipies -->
+
+  <div class="p-4">
+    <div class="md:mx-8">
+        <div class="flex justify-between p-4 rounded-xl shadow-xl mb-4">
+            <h1 class="text-3xl font-bold">Recipies</h1>
+            <div class="relative h-10">
+                <select
+                    class="peer h-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 empty:!bg-gray-900 focus:border-2 focus:border-red-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50">
+                    <option value="brazil">Most Popular</option>
+                    <option value="bucharest">New Users</option>
+                    <option value="london">Old Users</option>
+                </select>
+                <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-red-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-red-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-red-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    Filter By
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://recipes.net/wp-content/uploads/2023/05/grilled-chicken-sandwich-recipe_ebd0403939d98e157fea1bd85a8c557d.jpeg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Chicken Sandwich
+                        <p class="text-sm">Recipe by <a href="" class="font-bold text-red-500">Shaheer Mudassar</a>
+                        </p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl">
+            <div
+                class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+                <img class="w-full h-[13rem] object-cover"
+                    src="https://vismaifood.com/storage/app/uploads/public/914/f47/fa9/thumb__700_0_0_0_auto.jpg"
+                    alt="ui/ux review check" />
+                <div
+                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
+                </div>
+                <button
+                    class="!absolute  top-4 right-4 h-8 max-h-[32px] w-8 max-w-[32px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-red-500 transition-all hover:bg-red-500/10 active:bg-red-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path
+                                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                    <h5
+                        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900">
+                        Egg Chicken Biryani
+                        <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                    </h5>
+                    <p
+                        class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="-mt-0.5 h-5 w-5 text-yellow-700">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        5.0
+                    </p>
+                </div>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
+                    Enter a freshly updated and thoughtfully furnished peaceful home
+                    surrounded by ancient trees, stone walls, and open meadows.
+                </p>
+            </div>
+            <div class="p-6 pt-3">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid justify-center mb-8">
+    <div class="flex items-center gap-4">
+        <button
+          class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-full select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            aria-hidden="true" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+          </svg>
+          Previous
+        </button>
+        <div class="flex items-center gap-2">
+          <button
+            class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              1
+            </span>
+          </button>
+          <button
+            class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full bg-gray-900 text-center align-middle font-sans text-xs font-medium uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              2
+            </span>
+          </button>
+          <button
+            class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button">
+            <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+              3
+            </span>
+          </button>
+        </div>
+        <button
+          class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-full select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+          type="button">
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            aria-hidden="true" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+          </svg>
+        </button>
+      </div> 
+</div>
+
+  <!-- recipies End -->
+
+    <!-- footer -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <aside>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Social</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+    </footer>
+    <!-- footer end -->
+</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+</html>

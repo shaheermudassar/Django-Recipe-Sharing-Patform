@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Recipe Realm
+{% endblock title %}
+{% block body %}
+    <!-- hero section -->
+    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('static/images/bg.jpg')] h-[50vh]">
+    </div>
+
+    <div class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-32">
+        <div class="text-center">
+            <div
+                class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:py-16 md:px-12 mt-[-170px] backdrop-blur-[30px]">
+                <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+                    Savor the world's flavors <br /><span class="text-red-500">right in your kitchen</span>
+                </h1>
+                <a class="mb-2 inline-block rounded bg-gray-900 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
+                    data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Get started</a>
+                <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-red-500 transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
+                    data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- sub hero section -->
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 px-4 py-8 lg:px-24 lg:py-12 gap-4">
+        <div
+            class="relative grid w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div
+                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710633600&semt=sph')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50">
+                </div>
+            </div>
+            <div class="relative p-6 px-6 py-14">
+                <h2
+                    class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Explore Recipies
+                </h2>
+            </div>
+        </div>
+        <div
+            class="relative grid w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div
+                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?b=1&s=612x612&w=0&k=20&c=X6CkFGpSKhNZeiii8Pp2M_YrBdqs7tRaBytkGi48a0U=')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50">
+                </div>
+            </div>
+            <div class="relative p-6 px-6 py-14">
+                <h2
+                    class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Explore Categories
+                </h2>
+            </div>
+        </div>
+        <div
+            class="relative grid w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div
+                class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://media.istockphoto.com/id/1212417063/photo/table-full-of-food-for-family-dinner.jpg?s=612x612&w=0&k=20&c=VQw95DggeCDG_NHy5wHcg8BV7MhQmDDtLr-qxs4suiY=')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50">
+                </div>
+            </div>
+            <div class="relative p-6 px-6 py-14">
+                <h2
+                    class="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Share Recipies
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- sub hero section end -->
+    <!-- Categories and recipies section -->
+    <div class="lg:p-8 p-4 grid grid-cols-1 lg:grid-cols-4">
+        <!-- Categories -->
+        <div class="grid grid-cols-2 lg:grid-cols-1 gap-4 lg:m-4">
+            {% for category in categories %}
+            <a href="">
+                <div
+                    class="relative grid w-full flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+                    <div
+                        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('{{category.image.url}}')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50">
+                        </div>
+                    </div>
+                    <div class="relative p-6 px-6 py-16">
+                        <h2
+                            class="block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                            {{category.title}}
+                        </h2>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+
+        </div>
+        <!-- Categories end -->
+        <!-- Recipies section -->
+        <div class="lg:col-span-3 m-4">
+            <div class="flex justify-between p-4 rounded-xl shadow-xl mb-4">
+                <h1 class="text-3xl font-bold">Latest Recipies</h1>
+                <a href="">View all</a>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                {% for recipe in recipies %}
+                    {% include "components/recipe.html" %}
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Recipies section end -->
+    </div>
+    <!-- Categories and recipies section end -->
+    <!-- Video Recipies -->
+    <div class="m-8">
+        <div class="flex justify-between items-center p-4 rounded-xl shadow-xl mb-4">
+            <h1 class="text-3xl font-bold">Video Recipies</h1>
+            <a href="">View all</a>
+        </div>
+    </div>
+    <!-- grid of video recipies -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 m-4 lg:m-12">
+        <div class="relative w-full flex flex-col mt-6 text-gray-700 bg-white shadow-2xl bg-clip-border rounded-xl">
+            <div
+                class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                <a href=""
+                    class="text-5xl absolute grid btn-ghost transition justify-center items-center w-full h-full"><i
+                        class="fa-regular fa-circle-play"></i></a>
+                <img class="w-full h-full object-cover" src="https://i.ytimg.com/vi/jD3s5GSnEiA/maxresdefault.jpg"
+                    alt="card-image" />
+            </div>
+            <div class="p-6">
+                <h5
+                    class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Chicken Sandwich
+                    <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                </h5>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                    and near to "Naviglio" where you can enjoy the main night life in
+                    Barcelona.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative w-full flex flex-col mt-6 text-gray-700 bg-white shadow-2xl bg-clip-border rounded-xl">
+            <div
+                class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                <a href=""
+                    class="text-5xl absolute grid btn-ghost transition justify-center items-center w-full h-full"><i
+                        class="fa-regular fa-circle-play"></i></a>
+                <img class="w-full h-full object-cover" src="https://www.unileverfoodsolutions.lk/dam/global-ufs/mcos/meps/sri-lanka/calcmenu/recipes/LK-recipes/general/authentic-chicken-biryani/main-header.jpg"
+                    alt="card-image" />
+            </div>
+            <div class="p-6">
+                <h5
+                    class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Chicken Biryani
+                    <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                </h5>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                    and near to "Naviglio" where you can enjoy the main night life in
+                    Barcelona.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+        <div class="relative w-full flex flex-col mt-6 text-gray-700 bg-white shadow-2xl bg-clip-border rounded-xl">
+            <div
+                class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                <a href=""
+                    class="text-5xl absolute grid btn-ghost transition justify-center items-center w-full h-full"><i
+                        class="fa-regular fa-circle-play"></i></a>
+                <img src="{% static 'images/bg.jpg' %}"
+                    alt="card-image" />
+            </div>
+            <div class="p-6">
+                <h5
+                    class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    Chick Pees
+                    <p class="text-sm">Recipe by <a href="" class="font-bold">Shaheer Mudassar</a></p>
+                </h5>
+                <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                    and near to "Naviglio" where you can enjoy the main night life in
+                    Barcelona.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button
+                    class="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button">
+                    View Recipe
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- grid of video recipies end -->
+    <!-- Video Recipies end -->
+    <!-- Top Users -->
+    <div class="m-8">
+        <div class="flex justify-between p-4 rounded-xl shadow-xl mb-4">
+            <h1 class="text-3xl font-bold">Top Users</h1>
+            <a href="">View all</a>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 m-4 lg:m-12 gap-4">
+        {% for profile in profiles %}
+        <div class="relative flex flex-col text-gray-700 bg-white shadow-xl bg-clip-border rounded-xl w-full">
+            <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl">
+                <a href="{% url "profile_details" profile.id %}">
+                    <img class="object-cover w-full aspect-square" src="{{profile.profile_image.url}}" alt="profile-picture" />
+                </a>
+            </div>
+            <div class="p-6 text-center">
+                <h4
+                    class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    {{profile.full_name}}
+                </h4>
+                <p class="block font-sans antialiased font-medium leading-relaxed bg-clip-text">
+                    {{profile.following.all|length}} Followers
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+    <!-- Top Users end -->
+    {% endblock body %}

@@ -1,0 +1,20 @@
+.swiper {
+    width: 35vw;
+    height: 70vh;
+  }
+  @media screen and (max-width: 768px) {
+      .swiper {
+          width: 55vw;
+          height: 30vh;
+      }
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
